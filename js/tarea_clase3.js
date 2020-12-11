@@ -64,9 +64,44 @@
 // invertir el orden 
 // e imprimirlo
 
-const STRING_ORIGINAL = "hola mundo"
-let STRING_REVERSE
-for (let i = STRING_ORIGINAL.length -1; i >= 0; i--){
-    STRING_REVERSE += STRING_ORIGINAL[i]
-}
-console.log(STRING_REVERSE)
+// const STRING_ORIGINAL = "hola mundo"
+// let STRING_REVERSE
+// for (let i = STRING_ORIGINAL.length -1; i >= 0; i--){
+//     STRING_REVERSE += STRING_ORIGINAL[i]
+// }
+// console.log(STRING_REVERSE)
+
+
+//////////////////////////////////////////////////////////
+
+// Tabla del 7 con While
+
+// let counter = 1
+// while(counter<=10){
+//     console.log(`7 x ${counter} = ${7 * counter} `)
+//     counter += 1
+// }
+
+
+//Pares de 1 a 100 con while
+// let i
+// let counter=1
+// while(counter <= 100){
+//     i = counter % 2
+//     if(i === 0){
+//         console.log(counter)
+//     }
+//     counter++
+// }
+
+
+// // Invertir String con while
+// let string_original = "hola mundo"
+// let string_reverse = ""
+// let counter = string_original.length - 1
+// while(counter >= 0){
+//     string_reverse += string_original[counter]
+//     counter--
+// }
+// console.log(string_reverse)
+
