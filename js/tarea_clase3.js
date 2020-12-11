@@ -28,12 +28,22 @@ for(contador_2 = 1; contador_2 <=100; contador_2 += 1){
 // “en un lugar de la mancha” -> 5
 
 let chain_text = prompt("Cadena de Texto:")
-let i_3 = chain_text.
-
+let i_31 = chain_text.split(" ")
+let i_32 = i_31.length-1
+console.log(i_32)
 
 // imprimir en consola la cantidad de vocales que se 
 // encuentran en una cadena de texto
 // “Hola mundo” -> 4
 
-
-
+let vocales = 0
+let i_41
+for (i_41 = 0 ; i_41<chain_text.length ; i_41++){
+    if(chain_text[i_41] === "a" || chain_text[i_41] === "e" ||
+        chain_text[i_41] === "i" || chain_text[i_41] === "o" ||
+        chain_text[i_41] === "u"){
+            vocales++
+    }
+}
+console.log(chain_text)
+console.log(`Numero de vocales= ${vocales}`)
