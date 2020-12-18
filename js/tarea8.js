@@ -11,17 +11,16 @@ let users = [
 ];
 
 let newUsers = {}
-let fullName = users[0].firstName + ' ' + users[0].lastName
-let role = users[0].role
+// let fullName = users[0].firstName + ' ' + users[0].lastName
+// let role = users[0].role
+// newUsers[fullName] = role
+// console.log(newUsers)
 
-newUsers[fullName] = role
-console.log(newUsers)
-
-const joinUsers = users.reduce((newObject, user) => {
-    let fullName = user.firstName + ' ' + user.lastName
-    newObject[fullName] = user.role
-    return newObject
-},{})
+let joinUsers = users.forEach(currentObject => {
+    let fullName = currentObject.firstName + ' ' + currentObject.lastName
+    newUsers[fullName] = currentObject.role
+    return newUsers
+})
 
 // obtener un nuevo objeto con esta estructura
 //-> {
@@ -64,17 +63,19 @@ let persons = [
 // obtener lo siguiente
 // 1. Cantidad de personas que votaron
 // 2. Cual es el promedio de Edad de los votantes
-persons.reduce((acc, cv) => {
-    if(person.voted === true){
+let totalVoters = persons.reduce((acc, cv) => {
+    if(persons.voted === true){
         return acc + 1
     } else {
         return acc
     }
 } , 0)
+console.log(totalVoters)
+
 
 let averageAge = persons.reduce((acc, cv) => {
     return acc +cv.age
-} ,0) / person.length
+} ,0) / persons.length
 console.log(averageAge)
 
 
@@ -99,3 +100,4 @@ const result = arr => {
     }, 0)
     return total
 }
+console.log(total)
