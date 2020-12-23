@@ -20,6 +20,12 @@
     <button onclick="filterKoders('o')" >O</button>
     <button onclick="filterKoders('r')" >R</button>
 
+    <select name="" id="order__list" onchange="filterKodersSelect()">
+        <option value="" selected> Seleccionar a/d</option>
+        <option value ="a">Ascendente</option>
+        <option value="d">Descendente</option>
+    </select>
+
     <ul id="lista">
     </ul>
 

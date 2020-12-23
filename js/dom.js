@@ -45,7 +45,7 @@ const addElements = (selector,numberElements, arrNames) => {
     })
     document.querySelector(''+selector).innerHTML = listKoders
 }
-const kodersArr = ['ale','oscar','ruben', 'brian']
+const kodersArr = ['Ale','Oscar','Ruben', 'Brian', 'Alex', 'Gil', 'Emma', 'Carlos', 'Zay', 'Andre']
 // addElements('#lista', 10, kodersArr)
 
 const filterKoders = (letter) => {
@@ -61,3 +61,16 @@ const filterKoders = (letter) => {
 // 1 funcion
 // 1 método
 // usar HTML
+let selectOrder = document.getElementById('order__list')
+
+const filterKodersSelect = () => {
+
+    let order = document.getElementById('order__list').value
+    let orderArray = kodersArr.sort()
+
+    if(order === 'a'){
+        addElements('#lista', orderArray.length, orderArray)
+    } else if(order === 'd'){
+        addElements('#lista', orderArray.length, orderArray.reverse)
+    }
+}
