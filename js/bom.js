@@ -33,6 +33,9 @@ window.addEventListener('load', isLogged)
 // Redireccionarlo al /login.html
 // si tiene la cookie sessionuser
 // redireccionarlo a /user.html
+
+
+
 // 2.
 // Crear un div con un mensaje de
 // “Este sitio se ve mejor en desktop”
